@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Saunak Rath Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Saunak Rath</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url();">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Saunak Rath</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Finance Enthusiast  ',
+						'Computer Engineer  ',
+						'Asset and Portfolio Management   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>PGDM in Finance</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/saunak-rath-48b976199/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/Saunak23" class="btn btn-white btn-outline-white py-3 px-4">My Works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/saunak_rath.JPG" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Saunak Rath</span></p>
+										<p><span class="title-s">Role: </span> <span>PGDM Student</span></p> 
+										<p><span class="title-s">Experience: </span> <span>Fresher</span></p>
+										<p><span class="title-s">Address: </span> <span>Noida, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s"><b>Core Skills</b></p>
+									<span>Wealth Management</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Valuation</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Mergers & Acquisitions</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span></span>Power BI<span class="pull-right"> 90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Microsoft Office</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>A PGDM (Finance) student with strong academic and hands-on experience in wealth management, valuation, and data analytics. Completed a finance internship at SBI Wealth, contributing to client onboarding, KYC processes, product benchmarking, digital strategy formulation, and HNI and UHNI portfolio analysis using quantitative models. Experienced in financial modeling, DCF valuation, corporate finance, and predictive analytics, with hands-on projects in equity valuation, loan approval modeling, and mobile application development. Certified in Bloomberg Market Concepts and NISM modules, with proficiency in Excel, Power BI, Tableau, Python, and SQL, and a proven ability to deliver data-driven insights for financial decision-making.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Finance, Consulting &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Investment Firm, Consulting, BFSI, Asset &amp Portfolio Management Firm </span></li>
+									<li class="d-flex"><span>Education:</span> <span>PGDM in Finance, B.Tech in Computer Engineering </span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Odiya</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Core Skills:</span> <span>Financial Accounting, Corporate Finance, Sharpe Optimisation Model, Android Development, Advanced Microsoft Excel, Data Analytics, Python, Machine Learning, SQL, Database Management</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Sports Enthusiast, Karate, Dancing</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<!-- <div class="counter-wrap ftco-animate d-flex mt-md-3"> --> 
+							<div class="text">
+								<p class="mb-4">
+									<!-- <span class="number" data-number="30">0</span> <span>+</span> -->
+									<!-- <span>&nbsp; Projects completed</span> -->
+								</p>
+								 <!-- <p><a href="#" class="btn btn-primary py-4 px-5" class="btn btn-primary py-3 px-3">LinkedIn</a></p>  -->
+							 </div>
+						<!-- </div> --> 
+						</div>
+				</div>
+			</div>
+		</div>
+		
+    </section>
+<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/136zN1HuqAC0SbgzST_EhA2-Qx-eoMeh5/view?usp=sharing" class="btn btn-primary py-4 px-5">Download Resume</a></p>
+    			</div>
+    		</div>
+	
+
+
+
+		
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Finance professional with hands-on experience and strong core expertise in financial modeling, valuation, wealth management, and corporate finance, complemented by advanced data analytics capabilities. Proficient in Excel, Power BI, Tableau, Python, and SQL for transforming financial data into actionable insights, with solid knowledge of accounting, M&A fundamentals, and investment analysis to support informed, data-driven decisions.</p>
+          </div>
+	  
+        </div>
+
+
+		<div class="row">
+			<h1 class="big-4">Internship </h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-12">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2025-June 2025</span>
+						<h2>Finance Intern (Wealth Management)</h2>
+						<span class="position">State Bank of India (SBI)</span>
+						<p class="mt-4">SBI is an Indian multinational public sector Bank and financial service company headquartered in Mumbai. It is also the tenth largest employer in India with nearly 250,000 employees. As of 2025, SBI has over 50 crore customers. 
+							<ul>
+								<h6><b>Contributions:</b></h6>
+								<li>Designed and analysed multi-stakeholder surveys, uncovering critical gaps in SBI Wealth's product mix and digital services.</li>
+								<li>Supported SBI Wealth client's onboarding processes, gaining practical exposure to KYC norms, documentation, and digital onboarding tools.</li>
+								<li>Developed data-driven strategies to introduce Mutual Funds, Portfolio Management Services (PMS) /Alternative Investment Funds (AIFs) products, Insurance to enhance digital onboarding, and target emerging affluent clients.</li>
+								<li>Delivered actionable benchmarking strategies and as-is-as analysis of SBI Wealth through dynamic excel based insights vs. private banks and NBFCs, directly supporting senior leadership's strategic planning.</li>
+								<li>Helped Central Research Team in improvising HNI's Investment Portfolio analysis through Sharpe Optimisation Model in SBI Wealth Portal for precise investment strategies and advices.</li>
+								<p><a href="https://github.com/Saunak23/Internship-Report-and-Analysis" class="btn btn-primary py-4 px-5">Internship Report and Analysis</a></p>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				 <div class="col-md-6"> 
+					<!-- <div class="resume-wrap ftco-animate"> -->
+						<!-- <span class="date">2018-2021</span> -->
+						<!-- <h2>Senior Data Analyst</h2> -->
+						<!-- <span class="position">iQuanti</span> -->
+						<!-- <p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands.  -->
+							<!-- <ul> -->
+								<!-- <li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li> -->
+								<!-- <li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li> -->
+								<!-- <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
+							<!-- </ul> -->
+						<!-- </p> -->
+					<!-- </div> -->
+
+				 </div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2024-2026</span>
+    					<h2>PGDM, Finance</h2>
+    					<span class="position">BIMTECH</span>
+    					<p class="mt-4">CGPA: 6.78</p>
+    				</div>
+				</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2023</span>
+    					<h2>Bachelor of Technology</h2>
+    					<span class="position">IIIT Bhubaneswar</span>
+    					<p class="mt-4">CGPA: 7.7</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2018</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Kendriya Vidyalaya</span>
+    					<p class="mt-4">Percentage: 78.5</p>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2015-2016</span>
+    					<h2>Matriculation</h2>
+    					<span class="position">Kendriya Vidyalaya</span>
+    					<p class="mt-4">CGPA: 10</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<!-- <p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p> -->
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Short Term, Academic &amp; Other Projects</h2>
+            <p>Below are the Projects on Valuation Model, Data Analysis, PowerBi, Mutual Funds Performance etc.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Saunak23/Short-Term-Project" class="block-20 zoom-effect" style="background-image: url('images/dcf_valuation.JPG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Saunak23/Short-Term-Project">Three-Statement Linked Model &amp; DCF Valuation to value Maruti Suzuki</a></h3>
+                <p>Learnt Equity Valuation &amp; Financial Modeling to built a Three-Statement Linked Model &amp; DCF Valuation to value Maruti Suzuki for Alvron Partners(Investment Firm)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.kaggle.com/datasets/saunakrath/dataset" class="block-20 zoom-effect" style="background-image: url('images/loan_approval.JPG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.kaggle.com/datasets/saunakrath/dataset">Data Analysis of Client Loan approval using Python </a></h3>
+                <p>Automated real-time loan eligibility prediction using logistic regression on customer demographic and financial data.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Saunak23/Company-Analysis-Dashboard/blob/main/Castrol%20Dashboard%20Visualisation%20(2).pdf" class="block-20 zoom-effect" style="background-image: url('images/powerbi.JPG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Saunak23/Company-Analysis-Dashboard/blob/main/Castrol%20Dashboard%20Visualisation%20(2).pdf">Power BI Company Analysis Dashboard Project</a></h3>
+                <p>Analyze and Data Visualisation for Castrol to track and analyze the Fundamental data across Globe.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center"> 
+			 <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Saunak23/HealthCarePlus" class="block-20 zoom-effect" style="background-image: url('images/healthcare.JPG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Saunak23/HealthCarePlus">Healthcare Plus Application</a></h3>
+                <p>Developed a mobile application enabling users to book appointments with top specialists and schedule lab tests from home. This application was also published in IJARESM July 2023 Edition.</p>
+				<h6 class="heading"><a href="https://docs.google.com/document/d/1fPJ00V4LR8wFy8fNu5KNC1ZC07hglsxR/edit">Healthcare Application Journal</a></h6>
+				<h6 class="heading"><a href="https://drive.google.com/file/d/1lVmxb2GMJiQzLL5TKxuEYMfXsozQlzMs/view">Healthcare Journal Certificate</a></h6>
+              </div>
+            </div>
+          </div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Saunak23/Sharpe-Optimisation-Model" class="block-20 zoom-effect" style="background-image: url('images/sharpe_optimisation.JPG');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Saunak23/Sharpe-Optimisation-Model">Sharpe Optimisation Model</a></h3>
+				  <p>Selected 10 sectors, and from each sector studied 10 companies (total 100 companies). Based on the fundamental analysis of these 100 companies (only quantitative), selected one sector from each sector (total 10 companies) for further sharpe optimization model.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Saunak23/AMC-Mutual-Funds-Annualised-Risk-and-Returns-of-last-one-year-comparing-Nifty-Benchmark-" class="block-20 zoom-effect" style="background-image: url('images/mutual_fund.JPG');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Saunak23/AMC-Mutual-Funds-Annualised-Risk-and-Returns-of-last-one-year-comparing-Nifty-Benchmark-">AMC Mutual Funds Annualised Risk and Returns</a></h3>
+				  <p>Asset Management Companies Mutual Fund Annualised Risk and Returns of last one year based on Sharpe, Treynor Ratios, Jansen Alpha and Top 5 Mutual Funds are selected. Mutual Funds Information Ratio and Tracking Error are also calculated.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+		 <br>
+		<!-- added justify-content-center to center align the last two projects -->
+		 <div class="row d-flex justify-content-center"> 
+			<div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Saunak23/UltraCement-Valuation-Model/tree/main" class="block-20 zoom-effect" style="background-image: url('images/valuation_model.JPG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Saunak23/UltraCement-Valuation-Model/tree/main">Valuation Model to forecast &amp analyse Ultra Cements</a></h3>
+                <p>Performed 3 statement Linked Model, Ratio Analysis, Forecasting, WACC, Intrinsic Growth, Common Size Statement, DCF & Relative Valuation, Working Schedules, Du Pont Analysis and other analysis.</p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Saunak23/Investment-Calculator/tree/main" class="block-20 zoom-effect" style="background-image: url('images/investment_calculator.JPG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Saunak23/Investment-Calculator/tree/main">Investment Calculator</a></h3>
+                <p>Executed Investment Calculator with Input and Output Calculations Comparison, Dashboard, Audit Report, Concept Notes, Error calculation.</p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Saunak23/Financial-Ratio-Analysis" class="block-20 zoom-effect" style="background-image: url('images/ratio_analysis.JPG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Saunak23/Financial-Ratio-Analysis">Financial Ratio Analysis</a></h3>
+                <p>Executed Financial Ratios (i.e. Liquidity, Solvency, Turnover, Profitability, Valuation) of Companies.</p>
+              </div>
+            </div>
+          </div>
+			</div>
+	  </div>
+    </section>
+
+
+
+	 <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Certifications</h1>
+            <h2 class="mb-4">Certifications</h2>
+            <p>Below are the List of Professional and Learning Certifications earned.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://drive.google.com/file/d/1y1a7rskbAZ25R0xaY9YFFu6EahQ08FlK/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/nism_mf.JPG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://drive.google.com/file/d/1y1a7rskbAZ25R0xaY9YFFu6EahQ08FlK/view?usp=sharing">NISM Series V-A: Mutual Fund Distributors Certificate</a></h3>
+                <p>Passed &amp; Secured 79 out of 100 marks</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://drive.google.com/file/d/1Crc1HNSjL1zUCNMDD1HoaIDYwYbR0hjt/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/nism_pms.JPG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://drive.google.com/file/d/1Crc1HNSjL1zUCNMDD1HoaIDYwYbR0hjt/view?usp=sharing">NISM Series XXI-A: Portfolio Management Services (PMS) Distributors Certificate</a></h3>
+                <p>Passed &amp; Secured 74 out of 100 marks</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://drive.google.com/file/d/1QNGKRKr6Z0mSSGEWqmX5XgAY5HJ87cZr/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/nism_derivatives.JPG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://drive.google.com/file/d/1QNGKRKr6Z0mSSGEWqmX5XgAY5HJ87cZr/view?usp=sharing">NISM Series VIII: Equity Derivatives Certificate</a></h3>
+                <p>Passed &amp; Secured 66.5 out of 100 marks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center"> 
+			 <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://drive.google.com/file/d/1khv-WJ8VxRPN0vgXtMIsW6b6vf2e8_UT/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/bmc.JPG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://drive.google.com/file/d/1khv-WJ8VxRPN0vgXtMIsW6b6vf2e8_UT/view?usp=sharing">Bloomberg Market Course (BMC) Completion Certification</a></h3>
+                <!-- <p>Developed a mobile application enabling users to book appointments with top specialists and schedule lab tests from home. This application was also published in IJARESM July 2023 Edition.</p> -->
+				<!-- <h6 class="heading"><a href="https://docs.google.com/document/d/1fPJ00V4LR8wFy8fNu5KNC1ZC07hglsxR/edit">Healthcare Application Journal</a></h6> -->
+				<!-- <h6 class="heading"><a href="https://drive.google.com/file/d/1lVmxb2GMJiQzLL5TKxuEYMfXsozQlzMs/view">Healthcare Journal Certificate</a></h6> -->
+              </div>
+            </div>
+          </div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://drive.google.com/file/d/1qgcURPvjLIpxjH8ogE1vHN8Ig_OxxyPq/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/data_analytics.JPG');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1qgcURPvjLIpxjH8ogE1vHN8Ig_OxxyPq/view?usp=sharing">IBM Data Analytics with Python Certification</a></h3>
+				  <!-- <p>Selected 10 sectors, and from each sector studied 10 companies (total 100 companies). Based on the fundamental analysis of these 100 companies (only quantitative), selected one sector from each sector (total 10 companies) for further sharpe optimization model.</p> -->
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.udemy.com/certificate/UC-888fe6a3-25a9-4e42-ab30-b44a7c559ff8/" class="block-20 zoom-effect" style="background-image: url('images/data_science.JPG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.udemy.com/certificate/UC-888fe6a3-25a9-4e42-ab30-b44a7c559ff8/">Python Programming for Data Science</a></h3>
+                <!-- <p>Performed 3 statement Linked Model, Ratio Analysis, Forecasting, WACC, Intrinsic Growth, Common Size Statement, DCF & Relative Valuation, Working Schedules, Du Pont Analysis and other analysis.</p> -->
+              </div>
+            </div>
+          </div>
+		</div>
+		 <br>
+		<!-- added justify-content-center to center align the last two projects -->
+		 <div class="row d-flex justify-content-center"> 
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.udemy.com/certificate/UC-968f086f-a85a-4723-ab63-701888b25729/" class="block-20 zoom-effect" style="background-image: url('images/stock_trading.JPG');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.udemy.com/certificate/UC-968f086f-a85a-4723-ab63-701888b25729/">Stock Trading Certificate</a></h3>
+				  <p>Learnt Stock Trading, Stock Exchanges, Stock Management, Candlestick Patterns, Chart Patterns, Risk Management, Short Selling of Stocks and participated in Trading Competitions making profits.</p>
+				</div>
+			  </div>
+			</div>
+		 
+		  
+			</div>
+	  </div>
+    </section>
+
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+             <!-- <div class="block-18">  -->
+              <div class="text">
+              <!-- <strong class="number" data-number="20">0</strong>  -->
+                <!-- <span>Achievements</span>  -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+             <!-- <div class="block-18"> -->
+              <div class="text">
+                <!-- <strong class="number" data-number="30">0</strong>  -->
+                 <!-- <span>Projects</span>  --> 
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+             <!-- <div class="block-18"> -->
+              <div class="text">
+                 <!-- <strong class="number" data-number="1000">0</strong>  -->
+                <!-- <span>Mentored Students</span>  -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+             <!-- <div class="block-18"> -->
+              <div class="text">
+                <!-- <strong class="number" data-number="500">0</strong>  -->
+                <!-- <span>Cups of coffee</span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/Saunak23?tab=repositories" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Noida, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p>+91 7684974197</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p>saunak.rath@gmail.com</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/136zN1HuqAC0SbgzST_EhA2-Qx-eoMeh5/view?usp=sharing">Resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<!-- <h2>Have a<span> Question?  </span> <a href="https://forms.gle/Crud4cwrFeeFmL8u9" class="btn btn-primary py-3 px-5">Click Here</a> </h2> -->
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://github.com/Saunak23?tab=repositories"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/saunak-rath-48b976199/"><span class="icon-linkedin"></span></a></li>  
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li> -->
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
+				      <!-- <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li> -->
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
